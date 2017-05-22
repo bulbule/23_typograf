@@ -1,4 +1,4 @@
-# Typograf Service
+# Typograph Service
 
 An example of a typograph with a web-interface, that corrects your text by following certain rules:
 
