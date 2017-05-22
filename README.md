@@ -20,7 +20,7 @@ Run in the console
 ```#! bash
 $ python server.py
 ```
-
+The application is then available at the address http://localhost:5000/ and ready to be used.
 
 
 
