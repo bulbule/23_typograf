@@ -7,10 +7,10 @@ app = Flask(__name__)
 def form():
     if request.method == 'GET':
         return render_template('form.html')
-    if request.method == 'POST':
+    elif request.method == 'POST':
         input_text = request.form['text']
         typographed_text = Typograph(input_text).typographed_text
-    return render_template('form.html', result=typographed_text, origin=input_text)
+        return render_template('form.html', result=typographed_text, origin=input_text)
 
 if __name__ == "__main__":
     app.run(debug=True)
