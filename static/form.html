@@ -27,9 +27,9 @@
     </nav>
 
     <div class="container">
-      <form method="POST" action="/">
+      <form method="POST" action="http://localhost:5000/">
         <div class="form-group">
-          <textarea id="js-origin" name="text" class="form-control" rows="10" placeholder="Введите текст" autofocus>{{ origin }}</textarea>
+          <textarea name="text" class="form-control" rows="10" placeholder="Введите текст" autofocus></textarea>
         </div>
 
         <div class="form-group">
@@ -37,11 +37,11 @@
         </div>
 
         <div class="form-group">
-          <textarea id="js-result" class="form-control" rows="10" placeholder="Здесь будет результат" disabled="disabled">{{ result }}</textarea>
+          <textarea class="form-control" rows="10" placeholder="Здесь будет результат" disabled="disabled"></textarea>
         </div>
 
         <div class="form-group">
-          <js-button class="btn btn-primary" type="submit">Очистить</js-button>
+          <button onclick="deleteText()" class="btn btn-primary" type="submit">Очистить</button>
         </div>
       </form>
     </div>
@@ -49,12 +49,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
-      $(function deleteText(){
-        $("js-button").click(function() {
-          $("#js-result").val("");
-          $("#js-origin").val("");
-        });
-      });
+      function deleteText(){
+        document.getElementById('source').value = '';
+      };
     </script>
   </body>
 </html>
