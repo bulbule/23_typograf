@@ -9,7 +9,7 @@ An example of a typograph with a web-interface, that corrects your text by follo
 * link numbers to the following words or words to the following numbers by a non-breaking space
 * delete extra spaces or newlines
 
-The code is based on Flask(http://flask.pocoo.org/docs/0.11/quickstart/), which can be installed by 
+The code is based on [Flask](http://flask.pocoo.org/docs/0.11/quickstart/), which can be installed by 
 ```#! bash
 $ pip install -r requirements.txt
 ```
